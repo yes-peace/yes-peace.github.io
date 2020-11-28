@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Egg</title>
+</head>
+<body>
+<div class="countainer">
+<div class="obla">   
+    <div class="content">
+        <div class="nav">
+            <div class="logo"><img src="/img/logo.png" alt="Egg"></div>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Товары</a></li>
+            </ul>
+            <p><a href="tel:+380632884949">+38 063 288 4949</a></p>
+        </div>
+</header>
+<div class="body">
+    <div class="countainer">
+    <h1>Это всего лишь яйцо</h1>
+    <p>А вы уже достали свои кошельки и хотите приобрести наш товар</p>
+    <button class="button">приобрести</button>
+    </div>
+</div>
+    </div>
+            
+</div>  
+
+
+ <style>
+   *{
+ box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+}
+.obla {
+    background: url(/img/bg.png) no-repeat 100% 100%,linear-gradient(299.54deg, rgba(231, 86, 86, 0.59) -6.37%, rgba(231, 86, 86, 0) 55.62%);
+    width: 1263px;
+    height: 656px;
+}
+.content{
+    width: 703px;
+    height: 428px;
+    padding: 31px 457px 202px 120px;
+}
+.nav {
+    display: flex;
+    width: 703px;
+    height: 50px;
+    /* margin-bottom: 142px; */
+}
+.nav p {
+    font-weight: bold;
+}
+.logo::after{
+    content: ".ассортимент";
+    margin-right: 85px;
+    letter-spacing: 0.3em;
+}
+ul {
+    display: flex;
+    margin-right: 60px;
+    width: 230px;
+    /* height: 28px; */
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+li:hover{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.38);
+    padding-bottom: 25px;
+}
+.logo {
+    color: rgba(100, 43, 43, 1);
+}
+h1 {
+    width: 566px;
+    height: 57px;
+    margin-right: 135px;
+    margin-top: 130px;
+    font-family: Montaga;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+
+}
+.body p{
+    width: 400px;
+    height: 67px;
+    font-family: Montaga;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 30px;
+    
+}
+.button {
+    font-size: 27px;
+    line-height: 33px;
+    padding: 13px 32px;
+    border: 1px solid #782323;
+    background: transparent;
+    color: black;
+    margin-top: 32px;
+    transition: 0.7s ease;
+    box-shadow: 9px 4px 9px 2px rgba(0, 0, 0, 0.25);
+}
+.button:hover{
+    background: black;
+    color: white;
+    transition: 0.7s ease;
+}
+.button:active{
+    display: none;
+
+}
+    form{
+      width: 300px;
+      height: 150px;
+      margin: 0 auto;
+    }
+    label{
+      font-size: 18px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .firstOption{
+      margin:100px 0 100px 0;
+      display: none;
+    }
+    h2{
+      text-align: center;
+    }
+    .firstOption img{
+      max-width: 500px;
+      max-height: 400px;
+      margin-right: 30px;
+      box-shadow: 9px 4px 9px 2px rgba(0, 0, 0, 0.25);;
+    }
+    .text {
+      max-height: 400px;
+      vertical-align: center;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      box-shadow: 4px 4px 10px 2px rgba(0, 0, 0, 0.25);
+      padding: 20px;
+    }
+    .countainer{
+      width: 100%;
+      margin: 0auto;
+    }
+    .design{
+      margin: 30px 50px;
+      display: flex;
+      align-items: center;
+    }
+    #here {
+      color: white;
+      text-align: center;
+      font-size: 35px;
+    }
+    .herebg{
+      background-color: #782323;
+      justify-content: center;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      margin: 20px 50px 0 50px;
+    }
+
+
+ </style>
+ <div onmouseover="showStuff()" class="sect">
+  <form name= "yourText">
+    <p>
+      <label for="names">Выберите категорию</label>
+      <select name="names" id="names" multiple="multiple" onclick="activeSelect()",  >
+        <option value="Дизайн">Дизайн</option>
+        <option value="Разработка">Разработка</option>
+        <option value="Поиск клиентов">Поиск клиентов</option>
+        <option value="Програмное обучение">Програмное обучение</option>
+      </select>
+    </p>
+    <p> <input type="text" name="inpu" id="inpu" autocomplete="off" class="wid"></p>
+    <p> <input type="button" value="Перейти" onclick="nextStep()"></p>
+  </form>
+</div>
+ 
+            <div class="firstOption">
+              <div class="countainer">
+                <div class="herebg"><h2 id="here"></h2></div>   
+                <div class="design"><img src="img/design.jpg" alt="design">
+                <div class="text">
+                  <h2>Описание</h2>
+                  <p>Спойлер: эта статья не о программах и навыках, которыми должен владеть дизайнер интерьера, а о том, как найти своего клиента. Что нужно, чтобы стать дизайнером интерьера, с которым хотят работать? Для начала ответить на три вопроса.</p>
+                  <h2>Что отличает вас от других?</h2>
+                  <br>
+                  <p>Любой практикующий дизайнер знает: понравиться всем не получится. И не потребуется. Найти целевую аудиторию проще, если определить свою специализацию. Ваши отличительные черты — ответ на вопрос, как стать успешным дизайнером интерьера в условиях конкуренции.</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+  <script>
+    
+
+    function nextStep() {
+      var hid = document.querySelector(".firstOption");
+      h2.innerText = select.value;
+      inpu.value="";
+      if(select.value == "Дизайн"){
+        hid.style.display = "block";
+    }
+      
+}
+function showStuff() {
+  select.style.display = 'block';
+}
+function hideStuff() {
+  select.style.display = 'none';
+}
+
+      
+      function activeSelect(){
+        inpu.value = select.value;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+    var h2 = document.querySelector("#here");
+    var select = document.querySelector("#names");
+    var option = document.querySelectorAll("option");
+    console.log(option);
+    var inpu = document.querySelector("#inpu");
+    // console.log(inpu.value);
+    // console.log(option);
+    // function out (){
+
+    // }
+
+
+
+
+
+
+
+
+
+//  let l = 1;
+//    let dd = (name,surname)=> {
+//        for (let d = 1; d < 11; d++) {
+//     console.log(name+ ":" + surname);
+// }
+//    }
+// if( l === 1){
+//  let gog = setTimeout(dd, 1000);  
+// }else {
+//     console.log("l != 1")
+// }
+ 
+
+</script>
+    
+</body>
+</html>
